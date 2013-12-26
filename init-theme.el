@@ -7,7 +7,13 @@
 
 (color-theme-initialize)
 ;;(color-theme-deep-blue)
-;;(color-theme-classic)
 ;;(color-theme-ld-dark)
 
 ;;(color-theme-molokai)
+
+;;---------------------------------------------------------------------------
+;; define my assemble color-theme
+;;---------------------------------------------------------------------------
+;;(color-theme-ld-dark)
+;;(color-theme-classic)
+;; end assemble
