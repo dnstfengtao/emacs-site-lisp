@@ -21,8 +21,8 @@
 ;;--------------------------------------------------------------------------------
 ;; define default powerline theme for my emacs 
 ;;--------------------------------------------------------------------------------
-(powerline-vim-theme)
-;;(powerline-center-theme)
+;;(powerline-vim-theme)
+(powerline-center-theme)
 
 ;;--------------------------------------------------------------------------------
 ;; author information
