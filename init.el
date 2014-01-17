@@ -8,7 +8,6 @@
 ;;----------------------------------------------------------------------------
 ;; Require librarys for specific features and modes
 ;;----------------------------------------------------------------------------
-;;(require 'wget)
 (require 'color-theme)
 (require 'color-theme-solarized)
 (require 'color-theme-molokai)
@@ -18,18 +17,22 @@
 (require 'powerline)
 (require 'js2-mode)
 (require 'cl)
-;;(require 'cedet)
-(require 'html-helper-mode)
+(require 'google-c-style)
 (require 'remember)
-;;(require 'unicad)
-;;(require 'jde)
+(require 'git-emacs)
+(require 'ant-mode)
+(require 'python)
+(require 'sr-speedbar)
+(require 'rainbow-mode)
+(require 'web-mode)
+(require 'markdown-mode)
 ;;----------------------------------------------------------------------------
 ;; Load configuration for specific feature and modes
 ;; tips : powerline should aloways load ahead theme 
 ;;----------------------------------------------------------------------------
 (load "init-powerline.el")
 (load "init-smex.el")
-(load "init-cedet.el")
+(load "init-html.el")
 (load "init-org.el")
 (load "init-html.el")
 (load "init-javascript.el")
@@ -37,7 +40,10 @@
 (load "init-session.el")
 (load "init-util.el")
 (load "init-macro.el")
-(load "init-html-helper.el")
+(load "init-c.el")
+(load "init-speedbar.el")
+(load "init-css.el")
+(load "init-markdown.el")
 ;;----------------------------------------------------------------------------
 ;; Config system show and view or some feature and mode
 ;;----------------------------------------------------------------------------
@@ -68,7 +74,7 @@
 ;; windows user beacause a nice font will take a nice day
 ;;----------------------------------------------------------------------------
 ;; Setting English Font
-(set-face-attribute 'default nil :font "Consolas 12")   
+(set-face-attribute 'default nil :font "Consolas 11")   
 ;; Chinese Font 
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
@@ -96,9 +102,9 @@
 ;; email: 502359010@qq.com
 ;; End:
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
+;; custom-set-faces was added by Custom.
+;; If you edit it by hand, you could mess it up, so be careful.
+;; Your init file should contain only one such instance.
+;; If there is more than one, they won't work right.
  '(mode-line ((t (:foreground "#ffffff" :background "#000000" :box nil))))
  '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil)))))
