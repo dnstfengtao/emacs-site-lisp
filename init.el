@@ -1,49 +1,4 @@
-;; This file bootstraps the configuration, which is divided into
-;; a number of other files.
-;; the file named subdirs.el in the direcotor load-path
-;; is a important file that let emacs auto-load the director
-;; and sub-director's file of the load-pat
-(add-to-list 'load-path "F:/Emacs/site-lisp/")
-(add-to-list 'load-path "F:/Emaca/site-lisp/elib/")
-;;----------------------------------------------------------------------------
-;; Require librarys for specific features and modes
-;;----------------------------------------------------------------------------
-(require 'color-theme)
-(require 'color-theme-solarized)
-(require 'color-theme-molokai)
-(require 'smex)
-(require 'cygwin-mount)
-(require 'session)
-(require 'powerline)
-(require 'js2-mode)
-(require 'cl)
-(require 'google-c-style)
-(require 'remember)
-(require 'git-emacs)
-(require 'ant-mode)
-(require 'python)
-(require 'sr-speedbar)
-(require 'rainbow-mode)
-(require 'web-mode)
-(require 'markdown-mode)
-;;----------------------------------------------------------------------------
-;; Load configuration for specific feature and modes
-;; tips : powerline should aloways load ahead theme 
-;;----------------------------------------------------------------------------
-(load "init-powerline.el")
-(load "init-smex.el")
-(load "init-html.el")
-(load "init-org.el")
-(load "init-html.el")
-(load "init-javascript.el")
-(load "init-theme.el")
-(load "init-session.el")
-(load "init-util.el")
-(load "init-macro.el")
-(load "init-c.el")
-(load "init-speedbar.el")
-(load "init-css.el")
-(load "init-markdown.el")
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")))
 ;;----------------------------------------------------------------------------
 ;; Config system show and view or some feature and mode
 ;;----------------------------------------------------------------------------
@@ -68,13 +23,13 @@
 (global-set-key (kbd "<C-wheel-up>") 'text-scale-increase)
 (global-set-key (kbd "<C-wheel-down>") 'text-scale-decrease)
 ;; set how much lines and columns the emacs-frame default show
-(setq default-frame-alist '( (width . 100) (height . 30)))
+(setq default-frame-alist '( (width . 120) (height . 40)))
 ;;----------------------------------------------------------------------------
 ;; Configuration Windows Font this is very important for 
 ;; windows user beacause a nice font will take a nice day
 ;;----------------------------------------------------------------------------
 ;; Setting English Font
-(set-face-attribute 'default nil :font "Consolas 11")   
+(set-face-attribute 'default nil :font "Consolas 13")   
 ;; Chinese Font 
 (dolist (charset '(kana han symbol cjk-misc bopomofo))
   (set-fontset-font (frame-parameter nil 'font)
