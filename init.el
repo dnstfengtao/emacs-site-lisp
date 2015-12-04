@@ -9,11 +9,13 @@
 (setq load-path (append load-path (list "~/.emacs.d")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-6.6.1")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-zenburn-0.3")))
+(setq load-path (append load-path (list "~/.emacs.d/elpa/smex-3.0")))
 ;;----------------------------------------------------------------------------
 ;; Initial definition file.
 ;;----------------------------------------------------------------------------
 (load "init-theme.el")
 (load "init-customize.el")
+(load "init-smex.el")
 ;;----------------------------------------------------------------------------
 ;; Config system show and view or some feature and mode
 ;;----------------------------------------------------------------------------
