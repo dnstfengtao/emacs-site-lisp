@@ -2,6 +2,7 @@
 ;; Package dependencies defination
 ;;----------------------------------------------------------------------------
 (setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                         ("melpa" . "https://melpa.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")))
 ;;----------------------------------------------------------------------------
 ;; Pre-defined laod path.
@@ -12,6 +13,7 @@
 (setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-solarized-20120301")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/smex-3.0")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/python-mode-6.1.3")))
+(setq load-path (append load-path (list "~/.emacs.d/elpa/groovy-mode-201203310931")))
 ;;----------------------------------------------------------------------------
 ;; Initial definition file.
 ;;----------------------------------------------------------------------------
@@ -22,6 +24,7 @@
 (load "init-smex.el")
 (load "init-python.el")
 (load "init-pyflakes.el")
+(load "init-groovy.el")
 ;;----------------------------------------------------------------------------
 ;; Config system show and view or some feature and mode
 ;;----------------------------------------------------------------------------
