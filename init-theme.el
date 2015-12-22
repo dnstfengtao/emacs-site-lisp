@@ -4,6 +4,6 @@
 ;; This package is require the color-theme package 6.6.1
 ;; so we can only require this package to use the theme package.
 ;;---------------------------------------------------------------------------- 
-;;(require 'color-theme-zenburn)
+(require 'color-theme-zenburn)
 (require 'color-theme-solarized)
 (color-theme-solarized-dark)
