@@ -13,7 +13,7 @@
 (setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-solarized-20120301")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/smex-3.0")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/python-mode-6.1.3")))
-(setq load-path (append load-path (list "~/.emacs.d/elpa/groovy-mode-201203310931")))
+(setq load-path (append load-path (list "~/.emacs.d/elpa/groovy-mode")))
 ;;----------------------------------------------------------------------------
 ;; Initial definition file.
 ;;----------------------------------------------------------------------------
