@@ -25,6 +25,7 @@
 (load "init-python.el")
 (load "init-pyflakes.el")
 (load "init-groovy.el")
+(load "init-c++.el")
 ;;----------------------------------------------------------------------------
 ;; Config system show and view or some feature and mode
 ;;----------------------------------------------------------------------------
