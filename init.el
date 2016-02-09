@@ -14,6 +14,7 @@
 (setq load-path (append load-path (list "~/.emacs.d/elpa/smex-3.0")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/python-mode-6.1.3")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/groovy-mode")))
+(setq load-path (append load-path (list "~/.emacs.d/elpa/company-mode")))
 ;;----------------------------------------------------------------------------
 ;; Initial definition file.
 ;;----------------------------------------------------------------------------
@@ -26,6 +27,7 @@
 (load "init-pyflakes.el")
 (load "init-groovy.el")
 (load "init-c++.el")
+(load "init-company.el")
 ;;----------------------------------------------------------------------------
 ;; Config system show and view or some feature and mode
 ;;----------------------------------------------------------------------------
