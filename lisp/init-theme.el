@@ -6,4 +6,5 @@
 ;;---------------------------------------------------------------------------- 
 (require 'color-theme-zenburn)
 (require 'color-theme-solarized)
-(color-theme-solarized-dark)
+;;(color-theme-solarized-dark)
+(color-theme-zenburn)
