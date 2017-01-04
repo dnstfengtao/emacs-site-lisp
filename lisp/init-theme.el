@@ -8,3 +8,5 @@
 (require 'color-theme-solarized)
 (require 'color-theme-molokai)
 (color-theme-molokai)
+;;(color-theme-solarized-dark)
+;;(color-theme-zenburn)

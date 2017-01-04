@@ -7,7 +7,7 @@
 ;;----------------------------------------------------------------------------
 ;; Pre-defined laod path.
 ;;----------------------------------------------------------------------------
-(setq load-path (append load-path (list "~/.emacs.d")))
+(setq load-path (append load-path (list "~/.emacs.d/lisp")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-6.6.1")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-zenburn-0.3")))
 (setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-solarized-20120301")))
