@@ -5,17 +5,21 @@
                          ("melpa" . "https://melpa.org/packages/")
                          ("marmalade" . "https://marmalade-repo.org/packages/")))
 ;;----------------------------------------------------------------------------
+;; Path config.
+;;----------------------------------------------------------------------------
+(defconst my-emacs-path "~/.emacs.d/" "My Emacs init path.")
+(defconst my-emacs-lisp-path (concat my-emacs-path "lisp/") "lisp path")
+(defconst my-emacs-elpa-path (concat my-emacs-path "elpa/") "elpa path")
+;;----------------------------------------------------------------------------
+;; Pre load.
+;;----------------------------------------------------------------------------
+; load init-subdirs.el to load all files in the root directory.
+(load (concat my-emacs-lisp-path "init-subdirs"))
+;;----------------------------------------------------------------------------
 ;; Pre-defined laod path.
 ;;----------------------------------------------------------------------------
-(setq load-path (append load-path (list "~/.emacs.d/lisp")))
-(setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-6.6.1")))
-(setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-zenburn-0.3")))
-(setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-solarized-20120301")))
-(setq load-path (append load-path (list "~/.emacs.d/elpa/color-theme-molokai-0.1")))
-(setq load-path (append load-path (list "~/.emacs.d/elpa/smex-3.0")))
-(setq load-path (append load-path (list "~/.emacs.d/elpa/python-mode-6.1.3")))
-(setq load-path (append load-path (list "~/.emacs.d/elpa/groovy-mode")))
-(setq load-path (append load-path (list "~/.emacs.d/elpa/company-mode")))
+(my-add-subdirs-to-load-path my-emacs-lisp-path)
+(my-add-subdirs-to-load-path my-emacs-elpa-path)
 ;;----------------------------------------------------------------------------
 ;; Initial definition file.
 ;;----------------------------------------------------------------------------

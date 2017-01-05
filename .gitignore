@@ -3,6 +3,7 @@ init-customize.el
 *~
 eshell/
 auto-save-list/
+url/
 
 bookmarks
 session.*
